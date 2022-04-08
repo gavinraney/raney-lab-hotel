@@ -17,10 +17,6 @@ function displayUserName() {
   : `You haven't selected a valid account :(`;
 }
 
-function resetForm() {
-  document.getElementById("login").reset();
-}
-
 $("#btn").on("click", () => {
   console.log("here");
   let selectedHamster;
