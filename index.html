@@ -1,0 +1,143 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>raney-lab-hotel</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.2/css/bootstrap.min.css'>
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+
+<body>
+
+<div class="header">
+  <h1> hamstergrams </h1>
+  <p> the current date and time is: <span id='datetime'></span>. subsequently, it is time for you to look at hamsters :)</p>
+</div>
+    
+<div class = "card">
+  <div class = "card-header">
+    <h3> log in </h3>
+  </div>
+  <div class = "card-body">
+  <form id="login">
+    <label>username</label>
+    <input type="text" id="username" name="username" placeholder="e.g. hamsperlover50" required></input>
+    </br>
+    <label>password</label>
+    <input type="password" id="password" name="password" placeholder="e.g. hamstersr2cool!" required></input>
+    <p id="outputUNPW"></p>
+    <input id="submitLogin" type="submit" value="submit"></input>
+    <input type="reset" id="myReset" value="reset form">
+  </form>
+  </div>
+</div>
+
+</br>
+
+<div class = "card">
+  <div class = "card-header">
+    <h3> who is the coolest haster on the block </h3>
+  </div>
+  <div class = "card-body">
+    <p>choose wisely:</p>
+<div>
+  <input type="radio" name="hamsterName" value="gumball" id="gumball" required>
+  <label for="gumball">gumball</label>
+</div>
+<div>
+  <input type="radio" name="hamsterName" value="bagel" id="bagel" required>
+  <label for="bagel">bagel</label>
+</div>
+<div>
+  <input type="radio" name="hamsterName" value="banana" id="banana" required>
+  <label for="banana">banana</label>
+</div>
+<div>
+  <input type="radio" name="hamsterName" value="hamburger" id="hamburger" required>
+  <label for="hamburger">hamburger</label>
+</div>
+   </br>
+<p>
+  <button id="btn" type="submit">show selected hampster</button>
+</p>
+
+<p id="output"></p>
+  </div>
+</div>
+
+</br>
+
+<div class = "card">
+  <div class = "card-header">
+    <h3> send a hamstergram </h3>
+  </div>
+  <div class = "card-body">
+    <!--email-->
+    <label>email</label>
+  <input type="email" id="email" name="email" placeholder="e.g. tonyhamsters@hmail.com" required></input>
+ <!--date-->
+<form>
+  <label for="date">delivery date</label>
+  <input type="date" id="date" name="date">
+</form>
+  <!--hamster-->
+<form>
+  <label for="hamsters">choose a hamster:</label>
+  <select name="hamsters" id="hamsters">
+    <option value="Basketball">Basketball</option>
+    <option value="Reggie">Reggie</option>
+    <option value="Croquette">Croquette</option>
+    <option value="Gummy">Gummy</option>
+    <option value="Terror">Terror</option>
+    <option value="Goku">Goku</option>
+    <option value="Mochi">Mochi</option>
+    <option value="Gerbil">Gerbil</option>
+    <option value="Degu">Degu</option>
+    <option value="Stapler">Stapler</option>
+  </select>
+  <br><br>
+  <input type="submit" value="Submit">
+</form>
+    <!--body go here ADD DATE INPUT // U WILL RECIEVE YOUR HAMSTERGRAM ON X DATE // MAYBE DROPDOWN FOR SPECIFIC HAMSTERS. NAMES: BASKETBALL, REGGIE, CROQUETTE, GUMMY, TERROR, GOKU, MOCHI, GERBIL, DEGU, STAPLER-->
+  </div>
+</div>
+
+</br>
+
+<div class = "card">
+  <div class = "card-header">
+    <h3> what do u think of him </h3>
+  </div>
+  <div class = "card-body">
+    <!--body go here ADD CHECK BOXES-->
+    <form>
+      <input type="checkbox" id="neat" name="neat" value="neat">
+      <label for="neat"> he is neat</label><br>
+      <input type="checkbox" id="epic" name="epic" value="epic">
+      <label for="epic"> he is epic</label><br>
+      <input type="checkbox" id="evil" name="evil" value="evil">
+      <label for="evil"> he is evil >:D</label><br><br>
+      <input type="submit" value="Submit">
+  </form>
+
+  </div>
+</div>
+    
+    
+</br>
+    <div class = "footer">
+  <h5> <a href = "link" > repo </a> <span> || </span> <a href = "link"> nu </a> </h5>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script>
+
+<script src="./scripts/script.js"></script>
+
+</body>
+</html>
