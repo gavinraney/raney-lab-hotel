@@ -10,7 +10,7 @@ label {
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
-  text-align: left;
+  text-align: center;
   width: 100px;
   line-height: 26px;
   margin-bottom: 10px;
